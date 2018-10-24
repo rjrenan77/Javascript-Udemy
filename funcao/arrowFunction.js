@@ -18,5 +18,5 @@ comparaComThisArrow(global);
 comparaComThisArrow(module.exports);//módulo atual
 comparaComThisArrow(this);//this do módulo atual
 
-comparaComThisArrow = comparaComThisArrow.bind(obj);
+comparaComThisArrow = comparaComThisArrow.bind(obj); //não muda a referencia do this
 comparaComThisArrow(obj);
