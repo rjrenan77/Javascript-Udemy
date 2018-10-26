@@ -26,7 +26,7 @@ const carro = {
 
 const ferrari = {
     modelo: "v40",
-    velMax: 324 // shadowing
+    velMax: 324 // sobrescrita ou shadowing
 }
 
 const volvo = {
