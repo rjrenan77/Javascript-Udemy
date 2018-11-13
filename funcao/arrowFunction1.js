@@ -18,3 +18,9 @@ let ola = function () {
 
 ola = () => "Olá!";
 console.log(ola());
+
+
+
+
+let resposta = (resposta) => `Minha resposta é ${resposta}`;
+console.log(resposta("não"));
