@@ -9,9 +9,27 @@
 
 <body class="conteudo exercicio">
     <div>
-        <a href="https://google.com.br">Google</a>
+            <!-- posso usar com o onclick ou com o query selector -->
+            <!-- onclick="navegarEm5s(event) -->
+        <a espera-5-segundos href="https://google.com.br"> Google</a>
     </div>
     <script>
-        // ...
+        function navegarEm5s(e){
+            //previne o comportamento padrao do link
+            e.preventDefault();
+            console.log("saindo em 5s");
+            setTimeout(()=>{
+                const link = e.target;
+                //altera o conteudo da barra de endereço pelo link do atributo href
+                window.location.href = link.href;   
+            },5000);
+        }
+
+        // const a = document.querySelector("a");
+        // a.onclick = navegarEm5s;
+
+        //usando um atributo personalizado
+        const a = document.querySelector("[espera-5-segundos]");
+        a.onclick = navegarEm5s;
     </script>
 </body>
