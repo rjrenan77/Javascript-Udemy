@@ -24,3 +24,5 @@ const Calculadora = {
         console.log(this._resultado)
     }
 }
+
+Calculadora.somar(2,3).potencia(2,8).somar(4,5).log();
